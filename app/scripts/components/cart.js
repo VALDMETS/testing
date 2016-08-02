@@ -17,8 +17,8 @@ const Cart = React.createClass({
     });
     return (
       <div className="cart-box">
-      {itemArray}
-      <span>Total: ${this.state.total}</span>
+        {itemArray}
+        <span>Total: ${this.state.total}</span>
       </div>
     )
   },
