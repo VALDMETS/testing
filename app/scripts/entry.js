@@ -1,6 +1,11 @@
+import React from 'react';
+import ReactDOM from 'react-dom';
+
+import Cart from './components/cart';
 import store from './store';
 
 
+ReactDOM.render(<Cart />, document.getElementById('container'));
 
 store.cartModel.addItem(
   {
