@@ -13,7 +13,6 @@ const Cart = React.createClass({
   render: function() {
     let itemArray = this.state.items.map(function(item, i){
       return <CartItem key={i} data={item}/>
-      // return <CartItem/>
     });
     return (
       <div className="cart-box">
