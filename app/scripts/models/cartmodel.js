@@ -1,8 +1,10 @@
 import Bb from 'backbone';
 
 const CartModel = Bb.Model.extend({
-  total: 0,
-  items: [],
+  defaults: {
+    total: 0,
+    items: []
+  },
   removeItem: function(itemToBeRemoved) {
     let newList = this.get('items').filter((item) => {
       return !(itemToBeRemoved.id === item.id)
