@@ -4,8 +4,7 @@ import React from 'react';
 
 import Cart from '../../app/scripts/components/cart';
 import CartItem from '../../app/scripts/components/cartitem';
-// import CartModel from '../../app/scripts/models/cartmodel';
-// import store from '../../app/scripts/store';
+import store from '../../app/scripts/store';
 
 describe('<Cart/> component', function(){
 
@@ -15,18 +14,14 @@ describe('<Cart/> component', function(){
     expect(testCart.is('div')).to.be.true;
   });
 
+  // Can't figure out how to test the rendering/re-rendering stuff.
+  
   // it('should re-render when the cart model changes', () => {
-  //   let store = {};
-  //   store.cartModel = new CartModel({
-  //     items: [{
-  //       name: 'Microwave',
-  //       price: 32.95,
-  //       id: 235096
-  //     }],
-  //     total: 32.95
-  //   });
+  //
+  //   testCart.render();
+  //   store.cartModel.getTotal();
   //   console.log(testCart.html());
-  //   expect(testCart.contains('<span>Total:$ 32.95</span>')).to.be.true;
+  //   expect(testCart.contains(<span>Total: $0</span>)).to.be.true;
   //
   // });
 
